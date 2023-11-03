@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm José María González Cruz</h1>
+<h1 align="center">Hola 👋, soy José María González Cruz</h1>
 <h3 align="center">Soy un desarrollador frontend</h3>
 
 - 🌱 Actualmente estoy estudiando: **Angular, Java, React Js y Native**
