@@ -1,11 +1,11 @@
 <h1 align="center">Hi 👋, I'm José María González Cruz</h1>
-<h3 align="center">A passionate frontend developer</h3>
+<h3 align="center">Soy un desarrollador frontend</h3>
 
-- 🌱 I’m currently learning **Angular and Java**
+- 🌱 Actualmente estoy estudiando **Angular, Java, React Js y Native**
 
-- 👨‍💻 All of my projects are available at [https://jose-gc-portfolio.netlify.app/](https://jose-gc-portfolio.netlify.app/)
+- 👨‍💻 Mi portafolio: [https://jose-gc-portfolio.netlify.app/](https://jose-gc-portfolio.netlify.app/)
 
-- 📫 How to reach me **josmara301@hotmail.com**
+- 📫 Mi contacto: **josmara301@hotmail.com**
 
 # Gestor de tareas de tipo Trello
 
