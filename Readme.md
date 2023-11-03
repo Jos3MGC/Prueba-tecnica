@@ -7,11 +7,6 @@
 
 - 📫 How to reach me **josmara301@hotmail.com**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
-
-
 # Gestor de tareas de tipo Trello
 
 Cuenta con tecnologías:
