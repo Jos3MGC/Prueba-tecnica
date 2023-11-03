@@ -10,3 +10,42 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>
+
+
+# Gestor de tareas de tipo Trello
+
+Cuenta con tecnologías:
+
+* Next Js.
+* TypeScript
+* Styled Components
+* Redux
+
+
+
+## Deploy
+
+Ir a la ruta del programa:
+
+    cd tecnic-app
+
+Generar node_modules:
+
+```bash
+  npm i
+```
+
+Para hacer deploy:
+
+```bash
+  npm run dev
+```
+
+
+
+## Licencias para acceder
+
+* usuario: eve.holt@reqres.in
+* contraseña: cityslicka
+
+
