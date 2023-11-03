@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm José María González Cruz</h1>
 <h3 align="center">Soy un desarrollador frontend</h3>
 
-- 🌱 Actualmente estoy estudiando **Angular, Java, React Js y Native**
+- 🌱 Actualmente estoy estudiando: **Angular, Java, React Js y Native**
 
 - 👨‍💻 Mi portafolio: [https://jose-gc-portfolio.netlify.app/](https://jose-gc-portfolio.netlify.app/)
 
