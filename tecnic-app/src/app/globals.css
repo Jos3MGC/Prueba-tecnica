@@ -1,27 +1,409 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: rgb(71 85 105);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.wrapper {
+  width: 800px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-self: center;
+  margin: 3% auto;
+  box-shadow: 2px 18px 70px 0px #9D9D9D;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.login-text {
+  width: 800px;
+  height: 450px;
+  background: linear-gradient(#141e30, #243b55);
+  position: absolute;
+  top: -300px;
+  box-sizing: border-box;
+  padding: 6%;
+  transition: all 0.5s ease-in-out;
+  z-index: 11;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+}
+
+.login-box a span {
+  position: absolute;
+  display: block;
+}
+
+.login-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.login-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.cta {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #696a86;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom: -30px;
+  left: 370px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.call-text {
+  background-color: #fff;
+  width: 800px;
+  height: 450px;
+  position: absolute;
+  bottom: 0;
+  padding: 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.lottieImage {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 100%;
+  background-color: #141e30;
+}
+
+.show-hide {
+  display: block;
+}
+
+.expand {
+  transform: translateY(300px);
+}
+
+.rotateIcon {
+  transition: transform 0.5s linear;
+  transform: rotate(180deg);
+}
+
+.rotateIconUp {
+  transition: transform 0.5s linear;
+  transform: rotate(0deg);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.transition {
+  transition: all 0.5s ease-in-out;
+}
+
+/* Success View */
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-flow: row;
+}
+
+.row_reg_toDo {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+  background-color: #5a7a1f;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  color: white;
+}
+
+.iconBoard {
+  margin-right: 0.4rem;
+  border-radius: 100%;
+  background-color: rgb(33, 20, 48);
+  padding: 0.5rem;
+}
+
+.row_reg_doing {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+  background-color: #12316b;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  color: white;
+}
+
+.row_reg_done {
+  display: flex;
+  flex-flow: row;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: large;
+  font-weight: 700;
+  background-color: rgb(170, 186, 28);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  color: white;
+}
+
+.column {
+  flex: 0 0 272px;
+  margin: 10px;
+  /* box-sizing: border-box; */
+  background-color: #ebecf0;
+  padding: 10px;
+  height: 800px;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.row>p {
+  font-family: 'Amiri', serif;
+  font-size: 18px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.p_normal {
+  font-family: 'Amiri', serif;
+  font-size: 15px;
+  margin: 0px;
+  font-weight: normal;
+}
+
+.draggable {
+  box-shadow: 0 1px 0 #091e4240;
+  background-color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.droppable {
+  flex: 1 1 0;
+}
+
+/* Navbar */
+
+.container {
+  width: 100%;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin: 0 auto;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  align-items: center;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.topnav > h2 {
+  color: white;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
